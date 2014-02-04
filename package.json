@@ -1,0 +1,22 @@
+{
+  "name": "shootit",
+  "version": "0.1.0",
+  "description": "lightweight phantomjs wrapper",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samccone/shootit.git"
+  },
+  "author": "Sam Saccone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samccone/shootit/issues"
+  },
+  "homepage": "https://github.com/samccone/shootit"
+}
