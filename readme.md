@@ -5,6 +5,9 @@ shoot-it
 #### Dependencies
 * ensure phantomjs is in your path
 
+#### install
+`npm install shootit`
+
 #### How To Use
 
 ```js
