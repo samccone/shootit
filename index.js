@@ -14,10 +14,6 @@ module.exports = function(url, cb) {
     console.log(e.toString());
   });
 
-  p.stdout.on('data', function(d) {
-    console.log(d.toString());
-  });
-
   p.stdout.on('error', function(e) {
     console.log("phantomjs error");
     console.log(e);
