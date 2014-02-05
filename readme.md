@@ -14,6 +14,6 @@ shoot-it
 require('shootit')('http://google.com', function(e, d) {
   //e == error
   //d.fileBuffer == file buffer
-  //d.filePath == file path
+  //d.path == file path
 });
 ```
