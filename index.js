@@ -3,8 +3,10 @@ var fs    = require('fs');
 var path  = require('path');
 
 module.exports = function(url, cb) {
-  var name = Math.random() + ".png";
-  var p = spawn('phantomjs', ['shoot.js', url, name]);
+  var name      = Math.random() + ".png";
+  var location  = path.join("/tmp", name);
+
+  var p = spawn('phantomjs', ['shoot.js', url, location]);
 
   p.stdout.on('data', function(d) {
     console.log(d.toString());
@@ -17,10 +19,10 @@ module.exports = function(url, cb) {
   });
 
   p.stdout.on('end', function() {
-    fs.readFile(name, function(e, d) {
+    fs.readFile(location, function(e, d) {
       cb(e, {
         fileBuffer: d,
-        path: path.join(__dirname, name)
+        path: location
       });
     });
   });
